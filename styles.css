@@ -6,6 +6,7 @@
 }
 
 * {
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -24,8 +25,12 @@ h2 {
 } */
 
 header,
-main > section {
+main section {
   padding: 0 100px;
+}
+
+main section {
+  padding: 40px 100px;
 }
 
 header,
@@ -39,27 +44,116 @@ footer {
 header {
   align-items: center;
   justify-content: space-between;
-  color: var(--color-white);
 }
+
+header h2 {
+  color: var(--color-white);
+  font-size: 24px;
+}
+
 nav {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
-nav > a {
+nav a {
   color: var(--color-grey);
 }
 
 .sectionSplash {
-  background-color: var(--color-dark-blue);
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 40px 100px;
+}
+
+.sectionSplash > * {
+  flex: 1;
+}
+
+.splashText {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: start;
+}
+
+button {
+  background-color: var(--color-action-blue);
+  color: var(--color-white);
+  font-weight: 900;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+.sectionSplash h1 {
+  color: var(--color-white);
+  font-size: 48px;
+  font-weight: 900;
+}
+.sectionSplash p {
+  color: var(--color-grey);
+  font-size: 18px;
+}
+
+.placeholderImg {
+  display: flex;
+  background-color: grey;
+  color: var(--color-white);
+  justify-content: center;
+  align-items: center;
 }
 
 .sectionRandom {
   background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.sectionRandom > div {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  gap: 5px;
+  text-align: center;
+}
+
+.thumbnail {
+  height: 100px;
+  width: 100px;
+  border: 2px solid var(--color-action-blue);
+  border-radius: 10px;
+}
+
+.sectionRandom h1 {
+  color: var(--color-dark-blue);
+  font-size: 36px;
+  font-weight: 900;
 }
 
 .sectionQuote {
   background-color: var(--color-grey);
+}
+
+blockquote {
+  color: var(--color-dark-blue);
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.sectionQuote span {
+  font-weight: 900;
+  align-self: self-end;
 }
 
 .sectionCall {
