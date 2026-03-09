@@ -1,0 +1,36 @@
+:root {
+  --color-dark-blue: #1f2937;
+  --color-white: #f9faf8;
+  --color-grey: #e5e7eb;
+  --color-action-blue: #3882f6;
+}
+
+header,
+footer,
+.sectionSplash {
+  background-color: var(--color-dark-blue);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+.sectionSplash {
+  background-color: var(--color-dark-blue);
+}
+
+.sectionRandom {
+  background-color: var(--color-white);
+}
+
+.sectionQuote {
+  background-color: var(--color-grey);
+}
+
+.sectionCall {
+  background-color: var(--color-white);
+}
+
+footer {
+}
