@@ -5,15 +5,49 @@
   --color-action-blue: #3882f6;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 header,
 footer,
 .sectionSplash {
   background-color: var(--color-dark-blue);
 }
 
-header {
+/* h1 {
+    color: var(--color-white);
+}
+h2 {
+    color: var(--color-white)
+} */
+
+header,
+main > section {
+  padding: 0 100px;
+}
+
+header,
+footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: row;
+}
+
+header {
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color-white);
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+nav > a {
+  color: var(--color-grey);
 }
 
 .sectionSplash {
@@ -29,8 +63,11 @@ header {
 }
 
 .sectionCall {
-  background-color: var(--color-white);
+  background-color: var(--color-action-blue);
 }
 
 footer {
+  color: var(--color-grey);
+  align-items: center;
+  justify-content: center;
 }
